@@ -1,0 +1,32 @@
+{
+  "name": "joox",
+  "version": "1.0.0",
+  "description": "By Elvin Chu",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package-win": "electron-packager . joox --overwrite --asar=true --platform=win32 --arch=all --icon=./icon.ico --prune=true --out=release-builds --electron-version=1.4.15 --version-string.CompanyName=elvin-chu--version-string.FileDescription=joox-desktop --version-string.ProductName=joox-desktop",
+    "create-installer-win": "node npm-run-command/create-installer-win.js"
+},
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^2.0.0",
+    "electron-packager": "^12.1.0",
+    "grunt": "^1.0.3"
+  },
+  "dependencies": {
+    "electron-react-titlebar": "^0.8.1",
+    "electron-titlebar": "0.0.3",
+    "electron-titlebar-windows": "^3.0.0",
+    "electron-winstaller": "^2.6.4"
+  }
+}
